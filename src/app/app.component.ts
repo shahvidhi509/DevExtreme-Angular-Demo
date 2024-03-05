@@ -1,8 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  Component,
-} from '@angular/core';
+import { Component } from '@angular/core';
 interface UserInterface {
   id: number;
   name: string;
@@ -15,7 +11,6 @@ interface UserInterface {
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
   // User list
@@ -62,7 +57,7 @@ export class AppComponent {
   // Detail view visible flag
   popoverDetailVisible = false;
 
-  constructor(private cd: ChangeDetectorRef) {}
+  constructor() {}
 
   generateAvatar(user: UserInterface): void {
     const nameInitials = user.name
