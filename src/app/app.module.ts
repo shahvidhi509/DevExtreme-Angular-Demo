@@ -2,12 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {
-  DxSelectBoxModule,
-  DxPopoverModule,
-  DxDropDownBoxModule,
-  DxTemplateModule,
-} from 'devextreme-angular';
+import { DxSelectBoxModule, DxPopoverModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,8 +11,6 @@ import {
     AppRoutingModule,
     DxSelectBoxModule,
     DxPopoverModule,
-    DxDropDownBoxModule,
-    DxTemplateModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
